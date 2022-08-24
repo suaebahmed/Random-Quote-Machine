@@ -28,7 +28,7 @@ function App() {
       let id = Math.floor((Math.random()*100)%colors.length);
       setColor(colors[id]);
 
-      let res = await fetch("http://api.quotable.io/random");
+      let res = await fetch("https://api.quotable.io/random");
       let data = await res.json();
       setQuotes(data);
 

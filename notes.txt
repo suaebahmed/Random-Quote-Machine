@@ -1,0 +1,10 @@
+
+===  Some challenge work for me ===
+    -> make 100% hight
+    -> centering quote-div
+    -> button design
+
+===  still need to update ===
+    -> text animation 
+    -> share button
+

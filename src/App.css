@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+
+.App{
+  height: 100%;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#text,#author{
+  font-size: 1.45em;
+  margin: 15px 0px;
+
+
+  /* --- this animation doesn't work ----
+  
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-delay: 1000ms; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* @keyframes textAnimate {
+  0%{
+    opacity: 0;
   }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+} */
+
+#quote-box{
+  background-color: #fff;
+  margin : 0px;
+  padding: 25px 50px 40px 50px;
+  border-radius: 4px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#author{
+  text-align: right;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btns{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  /* this size fixed and parent element also at least this size follow */
+  width: 500px;
+}
+.share-btn{
+  display: flex;
+}
+#tweet-quote{
+  width: 50px;
+  height: 38px;
+  color: #fff;
+  border-radius: 3px;
+}
+#tweet-quote>i{
+  padding: 10px 15px;
+}
+#tumblr-quote{
+  margin-left: 10px;
+  width: 50px;
+  height: 38px;
+  color: #fff;
+  border-radius: 3px;
+}
+#tumblr-quote>i{
+  padding: 10px 18px;
 }
 
-.App-link {
-  color: #61dafb;
+#new-quote>button{
+  margin-top: 3px;
+  padding: 9px 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #fff;
+  opacity: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote>button:hover{
+  opacity: 0.8;
 }

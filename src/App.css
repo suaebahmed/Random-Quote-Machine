@@ -7,17 +7,16 @@
 #text,#author{
   font-size: 1.45em;
   margin: 15px 0px;
-
-
-  /* --- this animation doesn't work ----
-  
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-delay: 1000ms; */
 }
 
-/* @keyframes textAnimate {
+.animateClass{
+  /* --- this animation doesn't work ---- */
+  animation-name: textAnimate;
+  animation-duration: 280ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes textAnimate {
   0%{
     opacity: 0;
   }
@@ -27,7 +26,7 @@
   100%{
     opacity: 1;
   }
-} */
+}
 
 #quote-box{
   background-color: #fff;
@@ -40,17 +39,21 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.bottom-box{
+  /* this size fixed and parent element also at least this size follow */
+  width: 500px;
+}
+
 #author{
   text-align: right;
-  
 }
 
 .btns{
   display: flex;
   justify-content: space-between;
-  /* this size fixed and parent element also at least this size follow */
-  width: 500px;
 }
+
 .share-btn{
   display: flex;
 }
